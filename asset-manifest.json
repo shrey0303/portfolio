@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d5432022.css",
-    "main.js": "/static/js/main.1578a96c.js",
+    "main.js": "/static/js/main.0aa034c6.js",
     "static/js/453.5d79306b.chunk.js": "/static/js/453.5d79306b.chunk.js",
     "static/media/Ratelimiter.png": "/static/media/Ratelimiter.de272de391724dc44fa4.png",
     "static/media/leaf.png": "/static/media/leaf.ff2616f664c8c0ceab91.png",
@@ -12,8 +12,8 @@
     "static/media/blog.png": "/static/media/blog.fb8ab7f271a937d5fc01.png",
     "static/media/resume.pdf": "/static/media/resume.08221033e8a554dc5054.pdf",
     "static/media/finance.png": "/static/media/finance.ad457d9ad62a6c63d749.png",
-    "static/media/shrey-logo-2.png": "/static/media/shrey-logo-2.3b1edce9f4c1cd95c9a5.png",
-    "static/media/shrey-logo-dark.png": "/static/media/shrey-logo-dark.184855b46493e555b4e3.png",
+    "static/media/shrey-logo-darkmode.png": "/static/media/shrey-logo-darkmode.9475ca30788c9be39c12.png",
+    "static/media/shrey-logo-light.png": "/static/media/shrey-logo-light.5ad9e8b870b226e9dfc6.png",
     "static/media/DocReader.png": "/static/media/DocReader.edc6291715eacf15a7de.png",
     "static/media/chatify.png": "/static/media/chatify.7206044e0b5cdad44726.png",
     "static/media/graph.png": "/static/media/graph.4567d9faea1403cfa748.png",
@@ -23,11 +23,11 @@
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
     "main.d5432022.css.map": "/static/css/main.d5432022.css.map",
-    "main.1578a96c.js.map": "/static/js/main.1578a96c.js.map",
+    "main.0aa034c6.js.map": "/static/js/main.0aa034c6.js.map",
     "453.5d79306b.chunk.js.map": "/static/js/453.5d79306b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5432022.css",
-    "static/js/main.1578a96c.js"
+    "static/js/main.0aa034c6.js"
   ]
 }
