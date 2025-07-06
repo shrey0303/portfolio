@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logoLight from "../Assets/shrey-logo-2.png";
-import logoDark from "../Assets/shrey-logo-dark.png";
+import logoLight from "../Assets/shrey-logo-light.png";
+import logoDark from "../Assets/shrey-logo-darkmode.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -43,7 +43,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={isDarkMode ? logoDark : logoLight} style={{ height: '70px', width: '150px' }} alt="brand" />
+          <img src={isDarkMode ? logoDark : logoLight} style={{ height: '71px', width: '125px' }} alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
