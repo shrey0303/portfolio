@@ -909,3 +909,43 @@ html[data-theme='dark'] .home-about-section {
   background: var(--primary-bg) !important;
   background-image: none !important;
 }
+
+.home-main-img {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding-right: 50px;
+}
+
+.home2-avatar-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .home-main-img {
+    max-width: 260px;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home2-avatar-img {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .myAvtar {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+  }
+}
