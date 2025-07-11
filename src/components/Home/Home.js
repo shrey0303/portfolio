@@ -10,10 +10,10 @@ function Home() {
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
-        <Container className="home-content">
+        <Container className="home-content" style={{ paddingTop: 20, paddingBottom: 0 }}>
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 10, paddingTop: 140 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
@@ -25,17 +25,17 @@ function Home() {
                 <strong className="main-name"><b className="purple"> Shrey Khakharia</b> </strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 20, textAlign: "left", paddingLeft: 42 }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 0, paddingTop: 20 }}>
               <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxWidth: '100%', minWidth: 400, minHeight: 400 }}
+                style={{ maxWidth: '100%', minWidth: 560, minHeight: 560, paddingRight: 50}}
               />
             </Col>
           </Row>

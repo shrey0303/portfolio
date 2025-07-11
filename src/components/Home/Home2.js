@@ -15,7 +15,7 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "2.6em", paddingBottom: 30 }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
@@ -37,9 +37,9 @@ function Home2() {
               
             </p>
           </Col>
-          <Col md={4} className="myAvtar" style={{ marginTop: '-40px', paddingBottom: '40px' }}>
+          <Col md={4} className="myAvtar" style={{ marginTop: '-40px', paddingBottom: 70 }}>
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" style={{ maxWidth: '100%', minWidth: 400, minHeight: 400 , paddingTop: 69}} />
+              <img src={myImg} className="img-fluid" alt="avatar" style={{ maxWidth: '100%', minWidth: 450, minHeight: 450, paddingBottom: 10}} />
             </Tilt>
           </Col>
         </Row>
