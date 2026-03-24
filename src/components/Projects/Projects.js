@@ -1,94 +1,116 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import homequest from "../../Assets/Projects/homequest.jfif";
-import ratelimiter from "../../Assets/Projects/Ratelimiter.png";
-import docReader from "../../Assets/Projects/DocReader.png";
-import finance from "../../Assets/Projects/finance.png";
-import npm from "../../Assets/Projects/npm.jpg";
-import graph from "../../Assets/Projects/graph.png";
+import { Container } from "react-bootstrap";
+import { BsGithub } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
+
+const allProjects = [
+  {
+    number: "01",
+    title: "LMAX Disruptor Crypto Exchange",
+    description:
+      "A sub-microsecond latency cryptocurrency matching engine built on the LMAX Disruptor pattern. Features a 4-stage lock-free ring buffer pipeline, GC-free order book with Agrona, price-time priority matching, and real-time WebSocket market data streaming with Grafana dashboards.",
+    techTags: ["Java", "Spring Boot", "LMAX Disruptor", "Kafka", "gRPC", "Prometheus", "Grafana", "HdrHistogram"],
+    metrics: [
+      { value: "1.69M", label: "ops/sec" },
+      { value: "< 1μs", label: "latency" },
+      { value: "0", label: "GC pauses" },
+    ],
+    ghLink: "https://github.com/shrey0303/Lmax-disruptor-crypto-exchange",
+  },
+  {
+    number: "02",
+    title: "Hybrid GNN-LLM Recommender",
+    description:
+      "A production-grade multimodal recommendation engine fusing Graph Neural Networks (GraphSAGE), LLM text embeddings (TinyLlama/Mistral), and CLIP vision features through learned attention. Implements DPO preference alignment, real-time FastAPI serving, Kafka streaming, and full MLOps with experiment tracking.",
+    techTags: ["PyTorch", "PyTorch Geometric", "Transformers", "CLIP", "FastAPI", "Kafka", "MLflow", "DPO/LoRA"],
+    metrics: [
+      { value: "3", label: "modalities" },
+      { value: "195", label: "tests" },
+      { value: "DPO", label: "alignment" },
+    ],
+    ghLink: "https://github.com/shrey0303/hybrid-graph-recommender",
+  },
+  {
+    number: "03",
+    title: "SteerOps — LLM Activation Steering",
+    description:
+      "An activation-level debugger and steering tool for transformer models. Performs mathematical layer scanning (SVD, CKA, entropy), extracts PCA-based steering directions, and applies real-time activation interventions via PyTorch hooks with orthogonal projection and L₂ norm preservation — all without retraining.",
+    techTags: ["PyTorch", "FastAPI", "React", "Transformers", "PCA/SVD", "WebSocket", "Docker", "LEACE"],
+    metrics: [
+      { value: "O(1)", label: "runtime" },
+      { value: "5", label: "phases" },
+      { value: "CAA", label: "method" },
+    ],
+    ghLink: "https://github.com/shrey0303/activation_Steering",
+  },
+  {
+    number: "04",
+    title: "HomeQuest",
+    description:
+      "Real-estate SaaS platform with RBAC authentication, Cloudinary media storage, AI chatbot integration, custom NPM navigation package, and advanced property filters. Full-stack application built with Node.js, React, MongoDB, and GraphQL.",
+    techTags: ["React", "Node.js", "MongoDB", "GraphQL", "Cloudinary", "JWT", "NPM Package"],
+    metrics: [
+      { value: "RBAC", label: "auth" },
+      { value: "AI", label: "chatbot" },
+      { value: "SaaS", label: "platform" },
+    ],
+    ghLink: "https://github.com/shrey0303/Project_HomeQuest",
+    demoLink: "https://home-quest-mu.vercel.app/",
+  },
+];
 
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Works</strong>
+          <span style={{ color: '#F13024' }}>.</span>
         </h1>
         <p className="project-subtitle">
-          Here are a few projects I've worked on recently.
+          Production systems, research tools, and open-source contributions.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={docReader}
-              isBlog={false}
-              title="DocReader_RAG"
-              description={`A full-stack Retrieval-Augmented Generation (RAG) system for document Q&A and analysis. Supports PDF, PPTX, and CSV ingestion, chunking, vector search, reranking, and LLM-powered answers using Together AI. Built with Streamlit for a modern, interactive UI.\n\nFeatures: Multi-file upload, automatic chunking, top-k context, prompt transparency, LLM answers, dark mode, concurrent/multi-user safe, .env support, and robust evaluation tools.`}
-              ghLink="https://github.com/shrey0303/DocReader_RAG"
-              demoLink="https://docreader-rag.streamlit.app/"
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={ratelimiter}
-              isBlog={false}
-              title="RateLimiter"
-              description={`A production-ready gRPC microservice template built with Spring Boot and Bucket4j, providing hierarchical rate limiting (global, tenant, user levels) using Redis and JCache.\n\nFeatures: gRPC service, hierarchical rate limiting, distributed limits via Redis, Prometheus metrics, JWT-based authentication, circuit breaker, and graceful degradation.`}
-              ghLink="https://github.com/shrey0303/Ratelimiter"
-            />
-          </Col>
+        {/* All Projects — same featured card style */}
+        <div className="featured-projects">
+          <div className="featured-label">
+            <span>Projects</span>
+          </div>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={homequest}
-              isBlog={false}
-              title="HomeQuest"
-              description={`A secure, modular real-estate SaaS platform with RBAC authentication, cloudinary storage, dark/light mode, user favorites/bookmark, and advanced filters (price, location, type, sale/rent).\n\nBuilt with Node, React, MongoDB, and GraphQL. Features an AI Chatbot, custom NPM navigation package, and productivity-boosting utilities.`}
-              ghLink="https://github.com/shrey0303/Project_HomeQuest"
-              demoLink="https://home-quest-mu.vercel.app/"
-            />
-          </Col>
+          {allProjects.map((project, index) => (
+            <div className="featured-card" key={index}>
+              <div className="featured-card-number">{project.number}</div>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={npm}
-              isBlog={false}
-              title="NPM"
-              description={`A lightweight custom React hook for iterating through a list of options without boilerplate.\n\nFeatures: Easy navigation, customizable starting index, forward/backward handlers, and current option tracking.`}
-              ghLink="https://github.com/shrey0303/NPM"
-            />
-          </Col>
+              <div className="featured-metrics">
+                {project.metrics.map((metric, i) => (
+                  <div className="metric-item" key={i}>
+                    <span className="metric-value">{metric.value}</span>
+                    <span className="metric-label">{metric.label}</span>
+                  </div>
+                ))}
+              </div>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={graph}
-              isBlog={false}
-              title="GraphVision"
-              description={`Graph-based semi-supervised image classification via label propagation over similarity graphs, boosting accuracy with minimal labeled data.\n\nIncludes robust baseline comparisons, comprehensive EDA notebooks, modular code, and test-ready setup for reproducible results.`}
-              ghLink="https://github.com/shrey0303/ImageData"
-            />
-          </Col>
+              <div className="tech-tags">
+                {project.techTags.map((tag, i) => (
+                  <span className="tech-tag" key={i}>{tag}</span>
+                ))}
+              </div>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={finance}
-              isBlog={false}
-              title="Finance_Tracker"
-              description={`A predictive financial framework using non-linear techniques and data modeling for improved outcome predictions.\n\nProcesses large bank datasets, optimizes data segmentation, and outperforms traditional linear regression for more precise financial forecasting.`}
-              ghLink="https://github.com/shrey0303/Expense-Tracker"
-            />
-          </Col>
-        </Row>
+              <div className="featured-card-links">
+                <a href={project.ghLink} target="_blank" rel="noreferrer" className="card-link-github">
+                  <BsGithub /> GitHub
+                </a>
+                {project.demoLink && (
+                  <a href={project.demoLink} target="_blank" rel="noreferrer" className="card-link-demo">
+                    <CgWebsite /> Live Demo
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </Container>
     </Container>
   );

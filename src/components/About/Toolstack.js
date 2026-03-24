@@ -1,24 +1,40 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiVisualstudiocode, SiSublimetext, SiPytorch, SiTensorflow, SiScikitlearn, SiApachespark, SiReact, SiNodedotjs, SiSpringboot, SiGraphql, SiMongodb, SiPostgresql, SiMysql, SiGit, SiAmazonaws } from "react-icons/si";
+import {
+  SiPytorch, SiTensorflow, SiScikitlearn, SiApachespark, SiReact,
+  SiNodedotjs, SiSpringboot, SiGraphql, SiMongodb, SiPostgresql,
+  SiMysql, SiGit, SiAmazonaws, SiDocker, SiRedis, SiApachekafka, SiFastapi
+} from "react-icons/si";
 
 function Toolstack() {
+  const tools = [
+    { icon: <SiPytorch />, label: "PyTorch" },
+    { icon: <SiFastapi />, label: "FastAPI" },
+    { icon: <SiSpringboot />, label: "Spring Boot" },
+    { icon: <SiReact />, label: "React" },
+    { icon: <SiNodedotjs />, label: "Node.js" },
+    { icon: <SiApachekafka />, label: "Kafka" },
+    { icon: <SiRedis />, label: "Redis" },
+    { icon: <SiDocker />, label: "Docker" },
+    { icon: <SiPostgresql />, label: "PostgreSQL" },
+    { icon: <SiMongodb />, label: "MongoDB" },
+    { icon: <SiMysql />, label: "MySQL" },
+    { icon: <SiAmazonaws />, label: "AWS" },
+    { icon: <SiGit />, label: "Git" },
+    { icon: <SiApachespark />, label: "Spark" },
+    { icon: <SiGraphql />, label: "GraphQL" },
+    { icon: <SiTensorflow />, label: "TensorFlow" },
+    { icon: <SiScikitlearn />, label: "Scikit-learn" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons"><SiVisualstudiocode /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiPytorch /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiTensorflow /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiScikitlearn /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiApachespark /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiReact /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiNodedotjs /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiSpringboot /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiGraphql /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiMongodb /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiPostgresql /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiMysql /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiGit /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiAmazonaws /></Col>
+      {tools.map((tool, i) => (
+        <Col xs={4} md={2} className="tech-icons" key={i}>
+          {tool.icon}
+          <span className="tech-icon-label">{tool.label}</span>
+        </Col>
+      ))}
     </Row>
   );
 }

@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import { ThemeProvider } from "./context/ThemeContext";
+import topLeftImg from "./Assets/top-left-img.png";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -34,6 +35,10 @@ function App() {
       <Router>
         <Preloader load={load} />
         <div className="App" id={load ? "no-scroll" : "scroll"}>
+          {/* Background Layers — matching reference design */}
+          <div className="site-bg"></div>
+          <img src={topLeftImg} alt="" className="top-left-img" aria-hidden="true" />
+
           <Navbar />
           <ScrollToTop />
           <Routes>
