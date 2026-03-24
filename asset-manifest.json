@@ -1,33 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb97064d.css",
-    "main.js": "/static/js/main.7909a9cf.js",
-    "static/js/453.5d79306b.chunk.js": "/static/js/453.5d79306b.chunk.js",
-    "static/media/Ratelimiter.png": "/static/media/Ratelimiter.de272de391724dc44fa4.png",
-    "static/media/leaf.png": "/static/media/leaf.ff2616f664c8c0ceab91.png",
-    "static/media/emotion.png": "/static/media/emotion.eabfc16e7a146ab15778.png",
-    "static/media/suicide.png": "/static/media/suicide.9c86cd7138a398c45fa5.png",
-    "static/media/homequest.jfif": "/static/media/homequest.1d72d0af7b97ffc1c156.jfif",
-    "static/media/codeEditor.png": "/static/media/codeEditor.1b585492490c8c1cace9.png",
-    "static/media/blog.png": "/static/media/blog.fb8ab7f271a937d5fc01.png",
-    "static/media/Shrey_khakharia.pdf": "/static/media/Shrey_khakharia.b8b103a401886d99be9e.pdf",
-    "static/media/finance.png": "/static/media/finance.ad457d9ad62a6c63d749.png",
+    "main.css": "/static/css/main.e7872c00.css",
+    "main.js": "/static/js/main.e40a6352.js",
+    "static/js/453.ad7768ec.chunk.js": "/static/js/453.ad7768ec.chunk.js",
+    "static/media/bg-explosion.png": "/static/media/bg-explosion.f14d0e036738200e03e5.png",
+    "static/media/resume.pdf": "/static/media/resume.f110d8447a3f03ba47cd.pdf",
+    "static/media/circles.png": "/static/media/circles.73f92270cdef7e342fc7.png",
+    "static/media/top-left-img.png": "/static/media/top-left-img.ac4ac150c03d68afe800.png",
     "static/media/shrey-logo-darkmode.png": "/static/media/shrey-logo-darkmode.9475ca30788c9be39c12.png",
-    "static/media/shrey-logo-light.png": "/static/media/shrey-logo-light.5ad9e8b870b226e9dfc6.png",
-    "static/media/DocReader.png": "/static/media/DocReader.edc6291715eacf15a7de.png",
-    "static/media/chatify.png": "/static/media/chatify.7206044e0b5cdad44726.png",
-    "static/media/graph.png": "/static/media/graph.4567d9faea1403cfa748.png",
-    "static/media/home.svg": "/static/media/home.6de423e7912e4bd62760b099ad2184b1.svg",
-    "static/media/home2.svg": "/static/media/home2.e7264f23d5aca2e82b9f5c61ce0a8f42.svg",
-    "static/media/about.svg": "/static/media/about.eb98a88d67d579872b85ab62a9dc03a9.svg",
-    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
+    "static/media/hero-cartoon.png": "/static/media/hero-cartoon.024021188ed6c735d619.png",
+    "static/media/about-cartoon.png": "/static/media/about-cartoon.f3c63bcd7ba0c50c6405.png",
+    "static/media/site-bg.svg": "/static/media/site-bg.429740fd596837e33b07.svg",
     "index.html": "/index.html",
-    "main.eb97064d.css.map": "/static/css/main.eb97064d.css.map",
-    "main.7909a9cf.js.map": "/static/js/main.7909a9cf.js.map",
-    "453.5d79306b.chunk.js.map": "/static/js/453.5d79306b.chunk.js.map"
+    "main.e7872c00.css.map": "/static/css/main.e7872c00.css.map",
+    "main.e40a6352.js.map": "/static/js/main.e40a6352.js.map",
+    "453.ad7768ec.chunk.js.map": "/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb97064d.css",
-    "static/js/main.7909a9cf.js"
+    "static/css/main.e7872c00.css",
+    "static/js/main.e40a6352.js"
   ]
 }
