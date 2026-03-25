@@ -36,20 +36,21 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex align-items-center">
-          <img src={require("../Assets/shrey-logo-darkmode.png")} alt="SK" style={{ height: 120 }} />
+          <img src={require("../Assets/shrey-logo-darkmode.png")} alt="SK" style={{ height: "100px" }} />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
+
         >
           <span></span>
           <span></span>
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto" defaultActiveKey="#home" style={{ marginTop: "-11px" }}>
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
