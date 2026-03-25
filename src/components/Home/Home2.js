@@ -27,10 +27,8 @@ function Home2() {
               dashboard used to take six seconds to load. Now it takes three. That kind of thing.
               <br /><br />
               Before that, I was at <span style={{ color: '#fff' }}>DA-IICT</span> studying
-              ICT with a minor in computational science. The coursework was heavy on ML and
-              algorithms, which turned out to be useful when I started building recommendation
-              systems that fuse graph neural networks with LLM embeddings. I still think about
-              that architecture more than I probably should.
+              ICT with a minor in computational science. Later got fascinated in the realms of Machine
+              Learning and AI. I started building recommendation systems that fuse graph neural networks with LLM embeddings.
               <br /><br />
               Most of my side projects come from wanting to understand how something works
               under the hood. The matching engine does <span style={{ color: '#fff' }}>1.69 million
