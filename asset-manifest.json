@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.751ca98a.css",
-    "main.js": "/static/js/main.eee68103.js",
+    "main.js": "/static/js/main.2066f79e.js",
     "static/js/453.ad7768ec.chunk.js": "/static/js/453.ad7768ec.chunk.js",
     "static/media/bg-explosion.png": "/static/media/bg-explosion.f14d0e036738200e03e5.png",
-    "static/media/resume.pdf": "/static/media/resume.f110d8447a3f03ba47cd.pdf",
+    "static/media/resume_ml (1).pdf": "/static/media/resume_ml (1).8ff00f0907d3bcccbc5e.pdf",
     "static/media/circles.png": "/static/media/circles.73f92270cdef7e342fc7.png",
     "static/media/top-left-img.png": "/static/media/top-left-img.ac4ac150c03d68afe800.png",
     "static/media/shrey-logo-darkmode.png": "/static/media/shrey-logo-darkmode.9475ca30788c9be39c12.png",
@@ -13,11 +13,11 @@
     "static/media/site-bg.svg": "/static/media/site-bg.429740fd596837e33b07.svg",
     "index.html": "/index.html",
     "main.751ca98a.css.map": "/static/css/main.751ca98a.css.map",
-    "main.eee68103.js.map": "/static/js/main.eee68103.js.map",
+    "main.2066f79e.js.map": "/static/js/main.2066f79e.js.map",
     "453.ad7768ec.chunk.js.map": "/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.751ca98a.css",
-    "static/js/main.eee68103.js"
+    "static/js/main.2066f79e.js"
   ]
 }
